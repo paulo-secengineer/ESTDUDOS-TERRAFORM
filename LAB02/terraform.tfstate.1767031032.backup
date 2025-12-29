@@ -1,0 +1,83 @@
+{
+  "version": 4,
+  "terraform_version": "1.14.3",
+  "serial": 6,
+  "lineage": "63ca7891-28ed-b5d0-257e-3d6cac604263",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_public_ip",
+      "name": "pip-import",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "allocation_method": "Static",
+            "ddos_protection_mode": "VirtualNetworkInherited",
+            "ddos_protection_plan_id": null,
+            "domain_name_label": null,
+            "domain_name_label_scope": null,
+            "edge_zone": "",
+            "fqdn": null,
+            "id": "/subscriptions/244b05e9-ea65-4ac7-bd12-d350c3cb265b/resourceGroups/rg-lab-import-portal/providers/Microsoft.Network/publicIPAddresses/pip-lab-import-portal",
+            "idle_timeout_in_minutes": 4,
+            "ip_address": "50.85.59.158",
+            "ip_tags": {},
+            "ip_version": "IPv4",
+            "location": "westeurope",
+            "name": "pip-lab-import-portal",
+            "public_ip_prefix_id": null,
+            "resource_group_name": "rg-lab-import-portal",
+            "reverse_fqdn": null,
+            "sku": "Standard",
+            "sku_tier": "Regional",
+            "tags": {
+              "funciona": "SIM"
+            },
+            "timeouts": null,
+            "zones": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "module": "module.rg-import",
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "rg-import",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/244b05e9-ea65-4ac7-bd12-d350c3cb265b/resourceGroups/rg-lab-import-portal",
+            "location": "westeurope",
+            "managed_by": "",
+            "name": "rg-lab-import-portal",
+            "tags": {
+              "import": "OK"
+            },
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "name": "rg-lab-import-portal",
+            "subscription_id": "244b05e9-ea65-4ac7-bd12-d350c3cb265b"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
